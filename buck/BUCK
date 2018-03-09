@@ -6,5 +6,8 @@ cxx_binary(
   ]),
   srcs = glob([
     'src/**/*.cpp',
-  ])
+  ]),
+  deps = [
+    '//lib/TestLib:TestLib',
+  ],
 )

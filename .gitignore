@@ -1,4 +1,4 @@
-buck/.buckd
-buck/buck-out
+buck/**/.buckd
+buck/**/buck-out
 
 cmake/build

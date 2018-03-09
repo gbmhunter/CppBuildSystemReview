@@ -1,0 +1,13 @@
+cxx_library(
+  name = 'TestLib',
+  header_namespace = 'TestLib',
+  exported_headers = subdir_glob([
+    ('include', '**/*.hpp'),
+  ]),
+  srcs = glob([
+    'src/**/*.cpp',
+  ]), 
+  visibility = [
+    '//...',
+  ],
+)
