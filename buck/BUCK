@@ -1,0 +1,13 @@
+cxx_binary(
+  name = 'example',
+  header_namespace = 'example',
+  headers = subdir_glob([
+    ('../code/include', '**/*.hpp'),
+  ]),
+  srcs = glob([
+    '../code/src/**/*.cpp',
+  ]),
+  deps = [
+    '//mathutils:mathutils',
+  ],
+)
