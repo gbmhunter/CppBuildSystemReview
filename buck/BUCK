@@ -1,6 +1,6 @@
 cxx_binary(
-  name = 'example',
-  header_namespace = 'example',
+  name = 'Demo',
+  header_namespace = 'Demo',
   headers = subdir_glob([
     ('include', '**/*.hpp'),
   ]),

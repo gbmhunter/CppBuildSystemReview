@@ -1,4 +1,5 @@
 buck/**/.buckd
 buck/**/buck-out
 
-cmake/build
+cmake/**/build
+cmake/**/install
