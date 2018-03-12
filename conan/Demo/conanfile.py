@@ -12,10 +12,13 @@ class Demo(ConanFile):
     default_options = "shared=False"
     generators = "cmake"
     exports_sources = "src/*"
+    requires = "TestLib/0.1@gbmhunter/testing"
 
     def build(self):
         cmake = CMake(self)        
         cmake.configure(source_folder="src/")
+
+        print('BLAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH = ' + str(self.deps_cpp_info["TestLib"]))
         cmake.build()
 
     def imports(self):

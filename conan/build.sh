@@ -2,5 +2,10 @@
 
 # Create package for TestLib
 conan create ./TestLib gbmhunter/testing
-conan install ./Demo --install-folder build
-conan build ./Demo --build-folder build
+
+cd Demo
+mkdir -p build
+cd build
+conan install ..
+conan build ..
+./bin/Demo

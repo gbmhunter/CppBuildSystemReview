@@ -25,7 +25,7 @@ class TestlibConan(ConanFile):
         # self.run("cmake --build . %s" % cmake.build_config)
 
     def package(self):
-        self.copy("*.hpp", dst="TestLib", src="include/TestLib")
+        self.copy("*.hpp", dst="include", src="include/TestLib")
         self.copy("*.lib", dst="lib", keep_path=False)
         self.copy("*.dll", dst="bin", keep_path=False)
         self.copy("*.dylib*", dst="lib", keep_path=False)
@@ -33,4 +33,4 @@ class TestlibConan(ConanFile):
         self.copy("*.a", dst="lib", keep_path=False)
 
     def package_info(self):
-        self.cpp_info.libs = ["hello"]
+        self.cpp_info.libs = ["TestLib"]

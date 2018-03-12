@@ -3,3 +3,5 @@ buck/**/buck-out
 
 cmake/**/build
 cmake/**/install
+
+conan/**/build
