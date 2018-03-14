@@ -5,3 +5,6 @@ cmake/**/build
 cmake/**/install
 
 conan/**/build
+
+scons/**/.sconsign.dblite
+scons/**/build
