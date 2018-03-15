@@ -1,0 +1,12 @@
+Import('env')
+
+# Append absolute path otherwise this will not work when building
+# from other directories
+env.Append(CPPPATH=[Dir('include').abspath])
+
+clonedEnv = env.Clone()
+testLib = clonedEnv.StaticLibrary(
+    target = 'TestLib',
+    source = 'src/Adder.cpp')
+
+Export('testLib')

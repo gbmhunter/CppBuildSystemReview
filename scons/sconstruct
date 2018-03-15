@@ -1,3 +1,8 @@
+import os.path
 
-SConscript("src/main.scons", variant_dir="build", duplicate=0)
-env = Environment()
+env = DefaultEnvironment()
+Export('env')
+
+SConscript("external/TestLib/Sconscript", variant_dir="build/TestLib", duplicate=0)
+SConscript("src/Sconscript", variant_dir="build/Demo", duplicate=0)
+

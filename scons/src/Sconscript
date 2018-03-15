@@ -1,0 +1,5 @@
+Import('env testLib')
+
+clonedEnv = env.Clone()
+clonedEnv.Append(LIBS=[testLib])
+demo = clonedEnv.Program(target = 'Demo', source = ['main.cpp'])
