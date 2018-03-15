@@ -1,3 +1,5 @@
+bazel/**/bazel*
+
 buck/**/.buckd
 buck/**/buck-out
 
