@@ -1,4 +1,4 @@
-Bazel/bazel*
+Bazel/**/bazel*
 
 buck/**/.buckd
 buck/**/buck-out

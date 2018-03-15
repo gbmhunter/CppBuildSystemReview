@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include <TestLib/Adder.hpp>
+#include "Adder.hpp"
 
 int main() {
 	TestLib::Adder adder = TestLib::Adder();

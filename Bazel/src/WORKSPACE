@@ -1,0 +1,4 @@
+local_repository(
+    name = "testlibproject",
+    path = "../lib/TestLib",
+)
